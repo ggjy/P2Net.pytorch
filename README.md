@@ -35,7 +35,7 @@ The model is based on Resnet50. Input images are resized to 384x128.
 **Note that the result may be better than Table 9 in the paper. (Setting here is batchsize 48 on 1 GPU)**
 
 | Method | Rank-1 | Rank-5 | Rank-10 | mAP | Model |
-| --------- | ----- | ----- | ----- | ----- | ----- |
+| :----- | :-----: | :-----: | :-----: | :-----: | :-----: |
 | Baseline | 81.10 | 89.59 | 92.19 | 64.87 |[BaiDuYun](https://pan.baidu.com/s/1JZ_fHiqXjNDtWearwEIQ3Q) |
 |1 x Latent | 82.92 | 91.03 | 93.49 | 67.09 |[BaiDuYun](https://pan.baidu.com/s/1rvPB_-hOB8huqWTJuBDYSw) |
 |1 x DPB | 84.83 | 92.28 | 94.08 | 68.62 |[BaiDuYun](https://pan.baidu.com/s/1BSb51t8iIihyzKAyLcOgLQ) |
