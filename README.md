@@ -1,9 +1,9 @@
 # P2Net
-  This repository is the codes for ICCV2019 paper [Beyond Human Parts: Dual Part-Aligned Representations for Person ReID](https://arxiv.org/pdf/1910.10111.pdf)
+  Implementation of ICCV2019 paper [Beyond Human Parts: Dual Part-Aligned Representations for Person ReID](https://arxiv.org/pdf/1910.10111.pdf)
   
 I will further update the code after CVPR deadline :). 
 
-This repo can reproduce our results on DukeMTMC-reID.
+Codes from this repo can reproduce our results on DukeMTMC-reID.
 
 ## Prerequisites
 
@@ -18,7 +18,7 @@ This repo can reproduce our results on DukeMTMC-reID.
 ### Dataset & Preparation
 Download DukeMTMC-ReID Dataset.
 
-Preparation: You may need our generated human part masks [BaiduCloud](https://pan.baidu.com/s/18IIrRSnRN97mC8IShlmXwQ).
+Preparation: You may need our generated human part masks from [BaiduCloud](https://pan.baidu.com/s/18IIrRSnRN97mC8IShlmXwQ).
 Remember to change the dataset path to your own path in duke.py.
 
 ### Train
@@ -30,9 +30,9 @@ sh resnet50_softmax.sh
 
 ### Results
 
-The model is based on Resnet50. Input images are resized to 384x128.
+This model is based on ResNet-50. Input images are resized to 384x128.
 
-**Note that the result may be better than Table 9 in the paper. (Setting here is batchsize 48 on 1 GPU)**
+**Note that results may be better than Table 9 in the paper. (Setting here is batchsize 48 on 1 GPU)**
 
 | Method | Rank-1 | Rank-5 | Rank-10 | mAP | Model |
 | :----- | :-----: | :-----: | :-----: | :-----: | :-----: |
