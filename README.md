@@ -2,6 +2,23 @@
   This repository is the codes for ICCV2019 paper [Beyond Human Parts: Dual Part-Aligned Representations for Person ReID](https://arxiv.org/pdf/1910.10111.pdf)
 
 ## DukeMTMC-reID
+
+### Dataset & Preparation
+Download DukeMTMC-ReID Dataset.
+
+Preparation: You may need our generated human part masks.
+
+Remember to change the dataset path to your own path in duke.py.
+
+### Train
+Train a model by
+```bash
+cd scripts
+sh resnet50_softmax.sh
+```
+
+### Results
+
 The model is based on Resnet50. Input images are resized to 384x128.
 
 **Note that the result may be better than Table 9 in the paper. (Setting here is batchsize 48 on 1 GPU)**
@@ -9,8 +26,8 @@ The model is based on Resnet50. Input images are resized to 384x128.
 | Method | Rank-1 | Rank-5 | Rank-10 | mAP | Model |
 | --------- | ----- | ----- | ----- | ----- | ----- |
 | Baseline | 81.10 | 89.59 | 92.19 | 64.87 |
-|1 $$\times$$ Latent | 82.92 | 91.03 | 93.49 | 67.09 |
-|1 $$\times$$ DPB | 84.83 | 92.28 | 94.08 | 68.62 |
+|1 x Latent | 82.92 | 91.03 | 93.49 | 67.09 |
+|1 x DPB | 84.83 | 92.28 | 94.08 | 68.62 |
 
 ## Citation
 ```
