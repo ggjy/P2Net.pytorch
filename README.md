@@ -1,7 +1,5 @@
 # P2Net
   Implementation of ICCV2019 paper [Beyond Human Parts: Dual Part-Aligned Representations for Person ReID](https://arxiv.org/pdf/1910.10111.pdf)
-  
-I will further update the code after CVPR deadline :). 
 
 Codes from this repo can reproduce our results on DukeMTMC-reID.
 
@@ -20,6 +18,11 @@ Download DukeMTMC-ReID Dataset.
 
 Preparation: You may need our generated human part masks from [BaiduCloud](https://pan.baidu.com/s/18IIrRSnRN97mC8IShlmXwQ).
 Remember to change the dataset path to your own path in duke.py.
+
+CUHK03 human part masks from [BaiduCloud](https://pan.baidu.com/s/123ps1dHowd_17tL1dyrPjw). pwd: q39a
+
+Market-1501 human part masks from [BaiduCloud](https://pan.baidu.com/s/1ikHvcjDLEhDqyKsq0c81RA). pwd: uyus
+
 
 ### Train
 Train a model by
