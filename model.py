@@ -77,6 +77,7 @@ class P2Net(nn.Module):
         backbone.avgpool = nn.AdaptiveAvgPool2d((1,1))
 
         self.model = backbone
+        self.block_num = block_num
         self.classifier = ClassBlock(2048, class_num, dropout=False, relu=True, num_bottleneck=256)
         
         self.context_l2_1 = MSPyramidAttentionContextModule(in_channels=1024, out_channels=1024, c1=512, c2=512, 
@@ -108,7 +109,8 @@ class P2Net(nn.Module):
         x = self.model.layer2(x)
 
         x = self.model.layer3(x)
-        x = self.context_l2_1(x, part_map)
+        if self.block_num > 0:
+            x = self.context_l2_1(x, part_map)
 
         x = self.model.layer4(x)
         x = self.model.avgpool(x)
