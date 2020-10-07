@@ -23,6 +23,8 @@ CUHK03 human part masks from [BaiduCloud](https://pan.baidu.com/s/123ps1dHowd_17
 
 Market-1501 human part masks from [BaiduCloud](https://pan.baidu.com/s/1ikHvcjDLEhDqyKsq0c81RA). pwd: uyus
 
+Generated human part masks from [Google Drive](https://drive.google.com/drive/folders/1iGZkYxoJA7dgmFcGTV6oPltV9vNK7ao_?usp=sharing).
+
 
 ### Train
 Train a model by
